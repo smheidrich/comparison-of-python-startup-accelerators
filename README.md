@@ -90,7 +90,7 @@ same as running the application directly.
       ✅
     </td>
     <td>
-      ✅ Associated by `sys.argv[0]` of top-level executed script together with current working directory
+      ✅ Associated by <code>sys.argv[0]</code> of top-level executed script together with current working directory
     </td>
     <td>
       ❌

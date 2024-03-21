@@ -26,5 +26,5 @@ projects:
     packaging_integration: false
     association: true
     association_details: >-
-      Associated by `sys.argv[0]` of top-level executed script together with
-      current working directory
+      Associated by <code>sys.argv[0]</code> of top-level executed script
+      together with current working directory
