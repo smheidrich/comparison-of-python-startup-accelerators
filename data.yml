@@ -15,5 +15,5 @@ projects:
     pypi_url: https://pypi.org/project/preloaded/
     client_lang: Python
     server_lang: Python
-    implicit_server_launch: false
+    implicit_server_launch: true
     packaging_integration: false

@@ -80,7 +80,7 @@ same as running the application directly.
       Python
     </td>
     <td>
-      ❌
+      ✔
     </td>
     <td>
       ❌
