@@ -93,8 +93,8 @@ each of the existing ones and add some extra features on top:
       Python executable (to handle venvs)
     </td>
     <td>
-      ✅ Reload on any change in script or imported modules (e.g. using
-      <a href="https://pypi.org/project/py-hot-reload/">py-hot-reload</a>)
+      ✅ Reload on any change in script or imported modules, e.g. using
+      <a href="https://pypi.org/project/py-hot-reload/">py-hot-reload</a>
       (unless too bad for performance)
     </td>
     <td>
