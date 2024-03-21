@@ -38,10 +38,10 @@ same as running the application directly.
       </a>
     </td>
     <td>
-      C, but launched by a Python script ⇒ diminished speedup
+      🏃 C (but launched by a Python script ⇒ diminished speedup 🐌)
     </td>
     <td>
-      Python
+      🐌 Python
     </td>
     <td>
       ❌
@@ -63,10 +63,10 @@ same as running the application directly.
       </a>
     </td>
     <td>
-      Python
+      🐌 Python
     </td>
     <td>
-      Python
+      🐌 Python
     </td>
     <td>
       ✅
@@ -88,10 +88,10 @@ same as running the application directly.
       </a>
     </td>
     <td>
-      Python
+      🐌 Python
     </td>
     <td>
-      Python
+      🐌 Python
     </td>
     <td>
       ✅

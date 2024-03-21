@@ -1,8 +1,8 @@
 projects:
   - name: Pyseidon
     pypi_url: https://pypi.org/project/pyseidon/
-    client_lang: C, but launched by a Python script ⇒ diminished speedup
-    server_lang: Python
+    client_lang: 🏃 C (but launched by a Python script ⇒ diminished speedup 🐌)
+    server_lang: 🐌 Python
     implicit_server_launch: false
     packaging_integration: false
     association: false
@@ -13,8 +13,8 @@ projects:
     reload_on_changes_details: ""
   - name: quicken
     pypi_url: https://pypi.org/project/quicken/
-    client_lang: Python
-    server_lang: Python
+    client_lang: 🐌 Python
+    server_lang: 🐌 Python
     implicit_server_launch: true
     packaging_integration: true
     association: true
@@ -25,8 +25,8 @@ projects:
       Watches top-level script for changes
   - name: Python Preloaded
     pypi_url: https://pypi.org/project/preloaded/
-    client_lang: Python
-    server_lang: Python
+    client_lang: 🐌 Python
+    server_lang: 🐌 Python
     implicit_server_launch: true
     packaging_integration: false
     association: true
