@@ -107,3 +107,106 @@ same as running the application directly.
     </td>
   </tr>
 </table>
+
+## Hypothetical "perfect" accelerator
+
+The "perfect" (IMO) Python accelerator utility would combine the best parts of
+each of the existing ones and add some extra features on top:
+
+<table>
+  <tr>
+    <th>Name / URL</th>
+    <th>Client written in</th>
+    <th>Server written in</th>
+    <th>Implicit server launch</th>
+    <th>Association between script and preload state</th>
+    <th>Reload on changes</th>
+    <th>Packaging integration / entrypoints</th>
+  </tr>
+  <tr>
+    <td>
+      Hypothetical perfect accelerator
+    </td>
+    <td>
+      🏃 C or Rust, no launcher script or bash script if necessary
+    </td>
+    <td>
+      🏃 C, Rust, or compiled Python (Mypyc, Cython, ...)
+    </td>
+    <td>
+      ✅
+    </td>
+    <td>
+      ✅ Associated by absolute top-level script path together with path to
+      Python executable (to handle venvs)
+    </td>
+    <td>
+      ✅ Reload on any change in script or imported modules (e.g. using
+      <a href="https://pypi.org/project/py-hot-reload/">py-hot-reload</a>)
+      (unless too bad for performance)
+    </td>
+    <td>
+      ✅ (But again, no slow launcher script so probably no standard
+      entrypoints)
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Hypothetical perfect accelerator
+    </td>
+    <td>
+      🏃 C or Rust, no launcher script or bash script if necessary
+    </td>
+    <td>
+      🏃 C, Rust, or compiled Python (Mypyc, Cython, ...)
+    </td>
+    <td>
+      ✅
+    </td>
+    <td>
+      ✅ Associated by absolute top-level script path together with path to
+      Python executable (to handle venvs)
+    </td>
+    <td>
+      ✅ Reload on any change in script or imported modules (e.g. using
+      <a href="https://pypi.org/project/py-hot-reload/">py-hot-reload</a>)
+      (unless too bad for performance)
+    </td>
+    <td>
+      ✅ (But again, no slow launcher script so probably no standard
+      entrypoints)
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Hypothetical perfect accelerator
+    </td>
+    <td>
+      🏃 C or Rust, no launcher script or bash script if necessary
+    </td>
+    <td>
+      🏃 C, Rust, or compiled Python (Mypyc, Cython, ...)
+    </td>
+    <td>
+      ✅
+    </td>
+    <td>
+      ✅ Associated by absolute top-level script path together with path to
+      Python executable (to handle venvs)
+    </td>
+    <td>
+      ✅ Reload on any change in script or imported modules (e.g. using
+      <a href="https://pypi.org/project/py-hot-reload/">py-hot-reload</a>)
+      (unless too bad for performance)
+    </td>
+    <td>
+      ✅ (But again, no slow launcher script so probably no standard
+      entrypoints)
+    </td>
+  </tr>
+</table>
+
+<sup>1 If you're puzzled by what the benefit would be when it immediately
+executes slow Python anyway: The application's Python code might also have been
+compiled by Mypyc or Cython, in which case a server written in pure Python
+could end up causing most of the remaining startup delay.</sup>
