@@ -9,6 +9,8 @@ projects:
     association_details: >-
       No automatic mechanism. User can manually select different server by
       setting env var
+    reload_on_changes: false
+    reload_on_changes_details: ""
   - name: quicken
     pypi_url: https://pypi.org/project/quicken/
     client_lang: Python
@@ -18,6 +20,9 @@ projects:
     association: true
     association_details: >-
       Associated by absolute path of top-level executed script
+    reload_on_changes: true
+    reload_on_changes_details: >-
+      Watches top-level script for changes
   - name: Python Preloaded
     pypi_url: https://pypi.org/project/preloaded/
     client_lang: Python
@@ -28,3 +33,5 @@ projects:
     association_details: >-
       Associated by <code>sys.argv[0]</code> of top-level executed script
       together with current working directory
+    reload_on_changes: false
+    reload_on_changes_details: ""

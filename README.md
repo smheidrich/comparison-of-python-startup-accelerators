@@ -28,6 +28,7 @@ same as running the application directly.
     <th>Server written in</th>
     <th>Implicit server launch</th>
     <th>Association between script and preload state</th>
+    <th>Reload on changes</th>
     <th>Packaging integration / entrypoints</th>
   </tr>
   <tr>
@@ -47,6 +48,9 @@ same as running the application directly.
     </td>
     <td>
       ❌ No automatic mechanism. User can manually select different server by setting env var
+    </td>
+    <td>
+      ❌ 
     </td>
     <td>
       ❌
@@ -71,6 +75,9 @@ same as running the application directly.
       ✅ Associated by absolute path of top-level executed script
     </td>
     <td>
+      ✅ Watches top-level script for changes
+    </td>
+    <td>
       ✅
     </td>
   </tr>
@@ -91,6 +98,9 @@ same as running the application directly.
     </td>
     <td>
       ✅ Associated by <code>sys.argv[0]</code> of top-level executed script together with current working directory
+    </td>
+    <td>
+      ❌ 
     </td>
     <td>
       ❌

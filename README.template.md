@@ -28,6 +28,7 @@ same as running the application directly.
     <th>Server written in</th>
     <th>Implicit server launch</th>
     <th>Association between script and preload state</th>
+    <th>Reload on changes</th>
     <th>Packaging integration / entrypoints</th>
   </tr>
   {%- for project in projects %}
@@ -48,6 +49,9 @@ same as running the application directly.
     </td>
     <td>
       {% if project.association %}✅{% else %}❌{% endif %} {{ project.association_details }}
+    </td>
+    <td>
+      {% if project.reload_on_changes %}✅{% else %}❌{% endif %} {{ project.reload_on_changes_details }}
     </td>
     <td>
       {% if project.packaging_integration %}✅{% else %}❌{% endif %}
