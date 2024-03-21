@@ -44,10 +44,10 @@ same as running the application directly.
       {{ project.server_lang }}
     </td>
     <td>
-      {% if project.association %}✅{% else %}❌{% endif %} {{ project.association_details }}
+      {% if project.implicit_server_launch %}✅{% else %}❌{% endif %}
     </td>
     <td>
-      {% if project.implicit_server_launch %}✅{% else %}❌{% endif %}
+      {% if project.association %}✅{% else %}❌{% endif %} {{ project.association_details }}
     </td>
     <td>
       {% if project.packaging_integration %}✅{% else %}❌{% endif %}

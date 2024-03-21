@@ -43,10 +43,10 @@ same as running the application directly.
       Python
     </td>
     <td>
-      ❌ No automatic mechanism. User can manually select different server by setting env var
+      ❌
     </td>
     <td>
-      ❌
+      ❌ No automatic mechanism. User can manually select different server by setting env var
     </td>
     <td>
       ❌
@@ -65,10 +65,10 @@ same as running the application directly.
       Python
     </td>
     <td>
-      ✅ Associated by absolute path of top-level executed script
+      ✅
     </td>
     <td>
-      ✅
+      ✅ Associated by absolute path of top-level executed script
     </td>
     <td>
       ✅
@@ -87,10 +87,10 @@ same as running the application directly.
       Python
     </td>
     <td>
-      ✅ Associated by `sys.argv[0]` of top-level executed script together with current working directory
+      ✅
     </td>
     <td>
-      ✅
+      ✅ Associated by `sys.argv[0]` of top-level executed script together with current working directory
     </td>
     <td>
       ❌
