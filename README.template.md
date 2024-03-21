@@ -75,7 +75,6 @@ each of the existing ones and add some extra features on top:
     <th>Reload on changes</th>
     <th>Packaging integration / entrypoints</th>
   </tr>
-  {%- for project in projects %}
   <tr>
     <td>
       Hypothetical perfect accelerator
@@ -103,7 +102,6 @@ each of the existing ones and add some extra features on top:
       entrypoints)
     </td>
   </tr>
-  {%- endfor %}
 </table>
 
 <sup>1 If you're puzzled by what the benefit would be when it immediately
