@@ -27,6 +27,7 @@ same as running the application directly.
     <th>Client written in</th>
     <th>Server written in</th>
     <th>Implicit server launch</th>
+    <th>Association between script and preload state</th>
     <th>Packaging integration / entrypoints</th>
   </tr>
   {%- for project in projects %}
@@ -43,10 +44,13 @@ same as running the application directly.
       {{ project.server_lang }}
     </td>
     <td>
-      {% if project.implicit_server_launch %}✔{% else %}❌{% endif %}
+      {% if project.association %}✅{% else %}❌{% endif %} {{ project.association_details }}
     </td>
     <td>
-      {% if project.packaging_integration %}✔{% else %}❌{% endif %}
+      {% if project.implicit_server_launch %}✅{% else %}❌{% endif %}
+    </td>
+    <td>
+      {% if project.packaging_integration %}✅{% else %}❌{% endif %}
     </td>
   </tr>
   {%- endfor %}

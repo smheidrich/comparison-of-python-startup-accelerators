@@ -27,6 +27,7 @@ same as running the application directly.
     <th>Client written in</th>
     <th>Server written in</th>
     <th>Implicit server launch</th>
+    <th>Association between script and preload state</th>
     <th>Packaging integration / entrypoints</th>
   </tr>
   <tr>
@@ -40,6 +41,9 @@ same as running the application directly.
     </td>
     <td>
       Python
+    </td>
+    <td>
+      ❌ No automatic mechanism. User can manually select different server by setting env var
     </td>
     <td>
       ❌
@@ -61,10 +65,13 @@ same as running the application directly.
       Python
     </td>
     <td>
-      ✔
+      ✅ Associated by absolute path of top-level executed script
     </td>
     <td>
-      ✔
+      ✅
+    </td>
+    <td>
+      ✅
     </td>
   </tr>
   <tr>
@@ -80,7 +87,10 @@ same as running the application directly.
       Python
     </td>
     <td>
-      ✔
+      ✅ Associated by `sys.argv[0]` of top-level executed script together with current working directory
+    </td>
+    <td>
+      ✅
     </td>
     <td>
       ❌

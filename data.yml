@@ -5,15 +5,26 @@ projects:
     server_lang: Python
     implicit_server_launch: false
     packaging_integration: false
+    association: false
+    association_details: >-
+      No automatic mechanism. User can manually select different server by
+      setting env var
   - name: quicken
     pypi_url: https://pypi.org/project/quicken/
     client_lang: Python
     server_lang: Python
     implicit_server_launch: true
     packaging_integration: true
+    association: true
+    association_details: >-
+      Associated by absolute path of top-level executed script
   - name: Python Preloaded
     pypi_url: https://pypi.org/project/preloaded/
     client_lang: Python
     server_lang: Python
     implicit_server_launch: true
     packaging_integration: false
+    association: true
+    association_details: >-
+      Associated by `sys.argv[0]` of top-level executed script together with
+      current working directory
