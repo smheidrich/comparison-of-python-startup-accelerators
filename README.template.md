@@ -83,7 +83,7 @@ each of the existing ones and add some extra features on top:
       🏃 C or Rust, no launcher script or bash script if necessary
     </td>
     <td>
-      🏃 C, Rust, or compiled Python (Mypyc, Cython, ...)
+      🏃 C, Rust, or compiled Python (Mypyc, Cython, ...)<sup>1</sup>
     </td>
     <td>
       ✅
